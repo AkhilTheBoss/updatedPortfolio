@@ -1,0 +1,26 @@
+.scrolling-titles-wrapper {
+  overflow: hidden; /* Hide overflow to prevent titles from showing outside the container */
+  white-space: nowrap; /* Prevent titles from wrapping to the next line */
+  position: relative; /* Position relative for absolute children */
+  height: 50px; /* Set a fixed height for the container */
+}
+
+.scrolling-titles {
+  display: inline-flex; /* Use inline-flex to align items in a row */
+  animation: scroll 30s linear infinite; /* Adjust the duration for slower scrolling */
+}
+
+.title {
+  padding: 0 2rem; /* Add horizontal padding between titles */
+  font-size: 1.5rem; /* Adjust font size as needed */
+  color: #fff; /* Text color */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start from the left */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}

@@ -1,0 +1,43 @@
+.typing-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  padding-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Add media queries for responsive design */
+@media (max-width: 1024px) {
+  /* Styles for tablet view (screen width <= 1024px) */
+  .typing-container {
+    justify-content: flex-start; /* Keep the typing effect aligned to the left */
+    text-align: left; /* Align text to the left */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile view (screen width <= 768px) */
+  .typing-container {
+    justify-content: flex-start; /* Keep the typing effect aligned to the left */
+    text-align: left; /* Align text to the left */
+  }
+}
+
+.typingEffect {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 0.5rem;
+  border-right: 0.15em solid #fff;
+  animation: blink 0.75s step-end infinite;
+  margin: 0;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

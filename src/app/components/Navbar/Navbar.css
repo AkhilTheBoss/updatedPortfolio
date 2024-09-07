@@ -1,0 +1,122 @@
+.nav-wrapper {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(50px);
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-content {
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Justify content to create space between logo and menu */
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 12rem;
+  height: auto;
+}
+
+.nav-content ul {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.nav-content li {
+  margin: 0 1.5rem;
+}
+
+.menu-item {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-item::before {
+  content: " ";
+  width: 2em;
+  height: 0.2rem;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.6rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: opacity 0.3s ease;
+}
+
+.menu-item:hover::before {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  pointer-events: none; /* Prevent mouse events on the tooltip */
+  z-index: 100; /* Make sure it appears above other elements */
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 425px) {
+  .logo {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .menu-btn {
+    display: block; /* Show the hamburger button */
+    margin-left: auto; /* Push the button to the right */
+  }
+  .nav-content {
+    flex-direction: row-reverse; /* Reverse the order to put menu on the right */
+  }
+  .nav-content ul {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 100%;
+    right: 0; /* Align the dropdown to the right */
+    width: 100%;
+    padding: 1rem;
+    z-index: 29;
+  }
+  .nav-content ul.menu-open {
+    display: flex; /* Show the menu items when open */
+  }
+  .nav-content li {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 1325px) {
+  .nav-wrapper {
+    padding: 0 2rem;
+  }
+}

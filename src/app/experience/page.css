@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black; /* Background color of the body */
+  color: #fff; /* Text color for general page content */
+  font-family: "Poppins", sans-serif; /* Set default font family */
+}
+
+.experience-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.section h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.box1 {
+  background-color: rgba(55, 52, 52);
+  padding: 20px;
+  margin: 10px 0;
+  width: 600px; /* Default width for larger screens */
+  border-radius: 8px;
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Center items vertically */
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.box-image {
+  width: 50px; /* Set a width for the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 25px; /* Increased space between the image and the content */
+}
+
+.box1 .content {
+  text-align: left; /* Align text to the left */
+  flex-grow: 1; /* Allow content to grow and fill the available space */
+  font-family: "Poppins", sans-serif; /* Ensure text uses Poppins font */
+}
+
+.box1.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.box1.out-of-view {
+  opacity: 0;
+  transform: translateY(0);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+  /* Styles for tablet view (screen width <= 1024px) */
+  .box1 {
+    width: 400px; /* Reduce width for tablet view */
+    padding: 15px; /* Adjust padding for tablet view */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile view (screen width <= 768px) */
+  .box1 {
+    width: 300px; /* Further reduce width for mobile view */
+    padding: 10px; /* Adjust padding for mobile view */
+  }
+
+  .box-image {
+    width: 40px; /* Reduce image size for mobile */
+  }
+}
