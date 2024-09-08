@@ -57,6 +57,7 @@ function Page() {
             />
             <div className="content">
               <h4>Google Developer Student Club</h4>
+              <h5>Software Developer</h5>
               <h5>Nov 2023 - Present</h5>
             </div>
           </div>
@@ -68,6 +69,7 @@ function Page() {
             />
             <div className="content">
               <h4>#Include Club</h4>
+              <h5>Software Developer</h5>
               <h5>Nov 2023 - Feb 2024</h5>
             </div>
           </div>
@@ -79,6 +81,7 @@ function Page() {
             />
             <div className="content">
               <h4>ASUCD Pantry</h4>
+              <h5>Software Developer</h5>
               <h5>Mar 2024 - June 2024</h5>
             </div>
           </div>

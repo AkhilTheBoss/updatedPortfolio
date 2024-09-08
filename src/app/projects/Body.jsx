@@ -42,46 +42,63 @@ function Body() {
         <h1 className="title1">Projects</h1>
         <div className="cards-container">
           <Card
-            title="Card 1"
-            content="This is the first card."
+            title="Cloud Translatify"
+            content={`Developed a web application that converts spoken speech into its appropriate translation text and vocalizes the translated output.
+                      Utilized a variety of AWS services including Lambda, API Gateway, S3, DynamoDB, Codecommit, Cloudwatch, Amazon Translate, Amazon Polly.`}
+            tools="React, AWS, Docker, Kubernetes"
             imageSrc="images/3.png"
             imageDirection="left"
           />
           <Card
-            title="Card 2"
-            content="This is the second card."
+            title="Demand Paging Simulator"
+            content={`Developed a memory management technique to optimize the utilization of RAM.
+                      Demand paging has the following components: TLB, Page Map, RAM, and Secondary Storage.
+                      Implemented a page replacement algorithm (FIFO) if the TLB is full.`}
+            tools="C"
             imageSrc="images/demandPagingMain-2.jpg"
             imageDirection="right"
           />
           <Card
-            title="Card 3"
-            content="This is the third card."
+            title="Traffic Tweets"
+            content={`Developed a full-stack microservice application enabling users to communicate with others stuck in heavy traffic at the same signal.\nUsers are assigned to chat rooms based on their geolocation.`}
+            tools="Next.js, Node.js, RabbitMQ, Docker, Docker-compose, Firebase, PostgresSQL, MongoDB, NginX"
             imageSrc="images/4.png"
             imageDirection="left"
           />
           <Card
-            title="Card 4"
-            content="This is the fourth card."
+            title="Image Filtering and Edge Detection"
+            content={`Implemented image processing techniques including Gaussian blur, image sharpening, edge detection using Sobel filters, and bilateral blurring.
+                      Upsampled the image 4 times in each direction with nearest neighbor and bilateral interpolation techniques.
+                      Developed optimized approaches such as separable filters for Gaussian blur to reduce computational costs.`}
+            tools="Python"
             imageSrc="images/6.png"
             imageDirection="right"
           />
           <div className="small-cards-group">
             <SmallCard
-              title="Small Card Left"
-              content="This is the left small card."
+              title="Cloud-Based Document Processing and Management System"
+              content={`Developed a React application to handle document uploads, which sends the files to S3 and stores their paths and inputs in DynamoDB via API Gateway and Lambda.
+                        Deployed an EC2 instance that retrieves S3 file and input text from DynamoDB, downloads the file, processes it by appending the length of the text to the file, saves it back to S3 with a new name, and updates the DynamoDB with the new S3 file location.
+                        Managed and deployed all AWS infrastructure using AWS CDK.`}
+              tools="React, AWS"
               imageSrc="images/doc-2.png"
               position="left"
             />
             <SmallCard
-              title="Small Card Right"
-              content="This is the right small card."
+              title="Command Line Shell"
+              content={`Developed a command execution environment, allowing users to interact with the shell.
+                        Implemented input/output redirection, piping functionalities.
+                        Developed a directory stack, using the stack data structure. It keeps track of the directories visited, allowing to easily switch back and forth between them.`}
+              tools="C"
               imageSrc="images/nb.png"
               position="right"
             />
           </div>
           <Card
-            title="Card 5"
-            content="This is the seventh card."
+            title="FISC Assembler and Disassembler"
+            content={`Developed a custom assembler for translating FISC (Four Instruction Set Computers) assembly code into hexadecimal format using a two cycle process.
+                      Developed a disassembler that generated assembly instructions from hex code and simulated a step-by-step program execution visualization.`}
+            tools="C++"
             imageSrc="images/3316.png"
             imageDirection="left"
           />

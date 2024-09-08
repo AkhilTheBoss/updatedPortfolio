@@ -25,30 +25,104 @@
 }
 
 .card-title {
-  color: white; /* Title color */
-  padding: 10px; /* Space around the title */
-  text-align: center; /* Center title */
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 
 .card-content {
-  display: flex; /* Use flexbox to align items */
-  align-items: stretch; /* Ensure items stretch to match height */
-  flex-grow: 1; /* Allow content to take remaining space */
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
 }
 
 .card-content.reverse {
-  flex-direction: row-reverse; /* Reverse the order for right image */
+  flex-direction: row-reverse;
 }
 
 .card-image {
-  width: 30%; /* Set a fixed width for the image */
-  height: 100%; /* Set height equal to width for a square */
-  border-radius: 8px 0 0 8px; /* Optional: round the left corners */
-  object-fit: cover; /* Ensure the image covers the area without distortion */
+  width: 30%;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  object-fit: cover;
 }
 
 .text-content {
-  text-align: left; /* Align text to the left */
-  flex-grow: 1; /* Allow text content to take remaining space */
-  padding: 20px; /* Space between image and text */
+  text-align: left;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.text-points {
+  font-size: 10px;
+}
+
+.tools {
+  font-style: italic;
+  font-size: 0.8rem;
+  font-family: "Arial", sans-serif;
+  color: #aaa;
+}
+
+.text-title {
+  margin: 5px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.link:hover {
+  color: #a993fe;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 60vw;
+    min-height: 40vh;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 0 auto;
+  }
+
+  .card-content {
+    flex-direction: column;
+  }
+
+  .card-content.reverse {
+    flex-direction: column;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .text-content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 600px;
+    min-height: auto;
+    flex-direction: column;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .text-content {
+    padding: 20px;
+  }
 }

@@ -1,4 +1,3 @@
-/* Existing CSS */
 .cards-container {
   padding: 40px;
   max-width: 1200px;
@@ -7,6 +6,12 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+.main {
+  font-family: "Arial", sans-serif;
+  text-align: left;
+  width: 100%;
 }
 
 .Body-wrapper {
@@ -18,25 +23,22 @@
   align-items: center;
 }
 
-/* Add media queries for responsive design */
 @media (max-width: 768px) {
-  /* Styles for mobile view (screen width <= 768px) */
   .cards-container {
-    padding: 20px; /* Reduce padding for mobile view */
+    padding: 20px;
   }
 
   .Body-wrapper {
-    padding: 0 10px; /* Add some padding to the sides */
+    padding: 0 10px;
   }
 }
 
 @media (max-width: 1024px) {
-  /* Styles for tab view (screen width <= 1024px) */
   .cards-container {
-    padding: 30px; /* Adjust padding for tab view */
+    padding: 30px;
   }
 
   .Body-wrapper {
-    padding: 0 20px; /* Add some padding to the sides */
+    padding: 0 20px;
   }
 }

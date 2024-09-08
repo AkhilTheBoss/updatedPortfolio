@@ -2,13 +2,22 @@
 import React from "react";
 import "./SmallCard.css";
 
-const SmallCard = ({ title, content, imageSrc, position }) => {
+const SmallCard = ({ title, content, tools, imageSrc, position }) => {
   return (
     <div className={`small-card ${position}`}>
       <img src={imageSrc} alt={title} className="small-card-image" />
       <div className="small-card-text-content">
-        <h3>{title}</h3>
-        <p>{content}</p>
+        <div className="small-card-text-title">
+          <h3>{title}</h3>
+          <span className="tools"> | {tools} </span>
+        </div>
+        <div className="small-card-text-points">
+          <ul>
+            {content.split("\n").map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

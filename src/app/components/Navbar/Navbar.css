@@ -12,7 +12,7 @@
   max-width: 1300px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Justify content to create space between logo and menu */
+  justify-content: space-between;
   padding: 1rem 0;
   margin: 0 auto;
 }
@@ -20,6 +20,7 @@
 .logo {
   width: 12rem;
   height: auto;
+  cursor: pointer;
 }
 
 .nav-content ul {
