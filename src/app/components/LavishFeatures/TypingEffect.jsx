@@ -4,7 +4,7 @@ import "./TypingEffect.css";
 
 const TypingEffect = () => {
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = "Hi, I am Akhileshwar!";
+  const fullText = "New section!";
   const typingSpeed = 150;
 
   useEffect(() => {
