@@ -10,7 +10,17 @@ on: # We declare 'on' for workflows to be trigereed automatically to define the 
       - main
 
 jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run test:prod
   Deploy-Production:
+    needs: [Test]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
