@@ -7,9 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "test:prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "cypress open",
+    "test:prod": "jest --watch=false"
   },
   "dependencies": {
     "next": "14.2.6",

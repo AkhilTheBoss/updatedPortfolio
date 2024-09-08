@@ -19,6 +19,10 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run test:prod
+      - run: npm run test:unit
+      - run: npm run test:integration
+      - run: npm run test:e2e
+      - run: npm run test:coverage
   Deploy-Production:
     needs: [Test]
     runs-on: ubuntu-latest
