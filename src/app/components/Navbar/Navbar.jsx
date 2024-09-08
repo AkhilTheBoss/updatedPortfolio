@@ -43,7 +43,7 @@ function Navbar() {
               className="tooltip"
               style={{ top: tooltipPosition.top, left: tooltipPosition.left }}
             >
-              Your details go here!
+              I am a recent computer science grad from UC Davis!
             </div>
           )}
           <ul className={isMenuOpen ? "menu-open" : ""}>

@@ -6,7 +6,9 @@ function Introduction() {
     <>
       <div className="introduction">
         <h2>Welcome to My Portfolio</h2>
-        <p>Akhileshwar This Side! Here you can find my projects and skills.</p>
+        <div className="text">
+          Akhileshwar This Side! Here you can find my projects and skills.
+        </div>
       </div>
       <div className="info">
         <p>email: akhileshwarshriram@gmail.com</p>
