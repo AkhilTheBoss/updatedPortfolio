@@ -36,6 +36,7 @@ function Body() {
   return (
     <div className="Body-wrapper">
       <div className="cards-container">
+        <div className="main">Featured Work</div>
         <Card
           title="GeoNotify"
           content={`Developing a location-based reminder application based on users proximity to specified locations using geofencing and geolocation technologies.`}
@@ -52,7 +53,7 @@ function Body() {
           imageSrc="images/MacBook-02.png"
           imageDirection="right"
         />
-        <div>How I deployed my current portfolio?</div>
+        <div className="main">How I deployed my current portfolio?</div>
         <Card
           title="CI/CD"
           content="Developed and deployed a CI/CD pipeline using GitHub, GitHub Actions, and Vercel."
@@ -60,13 +61,15 @@ function Body() {
           imageSrc="images/newCICD.png"
           imageDirection="left"
         />
-        <div>How I deployed my previous portfolio?</div>
+        <div className="main">How I deployed my previous portfolio?</div>
         <Card
           title="CI/CD"
-          content="Developed and deployed a CI/CD pipeline using AWS CodeCommit, CodeBuild, CodeDeploy and S3."
+          content={`Developed and deployed a CI/CD pipeline using AWS CodeCommit, CodeBuild, CodeDeploy and S3.
+                  Link: http://cicd-m8-2.s3-website.us-east-2.amazonaws.com`}
           tools="AWS"
           imageSrc="images/new_cicd.png"
           imageDirection="left"
+          link="http://cicd-m8-2.s3-website.us-east-2.amazonaws.com"
         />
       </div>
     </div>

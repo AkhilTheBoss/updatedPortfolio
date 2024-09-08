@@ -53,10 +53,6 @@
   padding: 20px;
 }
 
-.text-title {
-  margin-bottom: 20px;
-}
-
 .text-points {
   font-size: 10px;
 }
@@ -66,6 +62,22 @@
   font-size: 0.8rem;
   font-family: "Arial", sans-serif;
   color: #aaa;
+}
+
+.text-title {
+  margin: 5px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.link:hover {
+  color: #a993fe;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

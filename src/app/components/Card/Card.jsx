@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({ title, tools, content, imageSrc, imageDirection }) => {
+const Card = ({ title, tools, content, imageSrc, imageDirection, link }) => {
   return (
     <div className="card">
       <div
@@ -22,6 +22,16 @@ const Card = ({ title, tools, content, imageSrc, imageDirection }) => {
               })}
             </ul>
           </div>
+          {link && (
+            <a
+              href={link}
+              className="link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Portfolio
+            </a>
+          )}
         </div>
       </div>
     </div>
