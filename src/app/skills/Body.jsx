@@ -25,6 +25,7 @@ import { SiMongodb } from "react-icons/si";
 import { SiAmazondynamodb } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import "./Body.css";
+import { SiGithubactions } from "react-icons/si";
 
 function Body() {
   return (
@@ -61,10 +62,10 @@ function Body() {
             }
           />
           <SkillBox
-            imageSrc="/images/devOps.png"
-            // icon={<SiGooglecloud size={25} />}
+            // imageSrc="/images/devOps.png"
+            icon={<SiGooglecloud size={25} />}
             title="DevOps Tools"
-            skills="Git, Docker, Kubernetes, AWS, Terraform, RabbitMQ, NginX"
+            skills="Git, Docker, Kubernetes, AWS, Terraform, RabbitMQ, NginX, Github Actions"
             bottomIcons={
               <>
                 <FaGitAlt size={20} />
@@ -74,6 +75,7 @@ function Body() {
                 <SiTerraform size={20} />
                 <SiRabbitmq size={20} />
                 <SiNginx size={20} />
+                <SiGithubactions size={20} />
               </>
             }
           />

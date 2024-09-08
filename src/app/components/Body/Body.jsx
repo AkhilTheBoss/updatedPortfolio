@@ -37,19 +37,33 @@ function Body() {
     <div className="Body-wrapper">
       <div className="cards-container">
         <Card
-          title="Card 1"
-          content="This is the first card."
+          title="GeoNotify"
+          content={`Developing a location-based reminder application based on users proximity to specified locations using geofencing and geolocation technologies.`}
           imageSrc="images/gdg4.png"
           imageDirection="left"
         />
         <Card
-          title="Card 2"
-          content="This is the second card."
+          title="Financial Expense Tracker"
+          content={`Developed a financial expense tracker allowing users to input received income and record expenses.
+                    The application generates weekly expenditure graphs to visualize spending patterns.
+                    Deployed the application on an AWS EC2`}
           imageSrc="images/MacBook-02.png"
           imageDirection="right"
         />
-        <Card title="Card 3" content="This is the third card." />
-        {/* Add more cards as needed */}
+        <div>How I deployed my current portfolio?</div>
+        <Card
+          title="CI/CD"
+          content="Developed and deployed a CI/CD pipeline using GitHub, GitHub Actions, and Vercel."
+          imageSrc="images/newCICD.png"
+          imageDirection="left"
+        />
+        <div>How I deployed my previous portfolio?</div>
+        <Card
+          title="CI/CD"
+          content="Developed and deployed a CI/CD pipeline using AWS CodeCommit, CodeBuild, CodeDeploy and S3."
+          imageSrc="images/new_cicd.png"
+          imageDirection="left"
+        />
       </div>
     </div>
   );

@@ -11,8 +11,16 @@ const Card = ({ title, content, imageSrc, imageDirection }) => {
       >
         <img src={imageSrc} alt={title} className="card-image" />
         <div className="text-content">
-          <h3>{title}</h3>
-          <p>{content}</p>
+          <div className="text-title">
+            <h3>{title}</h3>
+          </div>
+          <div className="text-points">
+            <ul>
+              {content.split("\n").map((point, index) => {
+                return <li key={index}>{point}</li>;
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -6,11 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:e2e": "cypress open",
-    "test:prod": "jest --watch=false"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "14.2.6",
