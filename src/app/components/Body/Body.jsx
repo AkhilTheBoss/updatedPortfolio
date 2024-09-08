@@ -39,6 +39,7 @@ function Body() {
         <Card
           title="GeoNotify"
           content={`Developing a location-based reminder application based on users proximity to specified locations using geofencing and geolocation technologies.`}
+          tools="React Native, Node.js, MongoDB, Firebase"
           imageSrc="images/gdg4.png"
           imageDirection="left"
         />
@@ -47,6 +48,7 @@ function Body() {
           content={`Developed a financial expense tracker allowing users to input received income and record expenses.
                     The application generates weekly expenditure graphs to visualize spending patterns.
                     Deployed the application on an AWS EC2`}
+          tools="Node.js, Next.js, MongoDB, Firebase, AWS, Terraform"
           imageSrc="images/MacBook-02.png"
           imageDirection="right"
         />
@@ -54,6 +56,7 @@ function Body() {
         <Card
           title="CI/CD"
           content="Developed and deployed a CI/CD pipeline using GitHub, GitHub Actions, and Vercel."
+          tools="GitHub, GitHub Actions, Vercel"
           imageSrc="images/newCICD.png"
           imageDirection="left"
         />
@@ -61,6 +64,7 @@ function Body() {
         <Card
           title="CI/CD"
           content="Developed and deployed a CI/CD pipeline using AWS CodeCommit, CodeBuild, CodeDeploy and S3."
+          tools="AWS"
           imageSrc="images/new_cicd.png"
           imageDirection="left"
         />

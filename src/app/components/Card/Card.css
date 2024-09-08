@@ -25,26 +25,26 @@
 }
 
 .card-title {
-  color: white; /* Title color */
-  padding: 10px; /* Space around the title */
-  text-align: center; /* Center title */
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 
 .card-content {
-  display: flex; /* Use flexbox to align items */
-  align-items: stretch; /* Ensure items stretch to match height */
-  flex-grow: 1; /* Allow content to take remaining space */
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
 }
 
 .card-content.reverse {
-  flex-direction: row-reverse; /* Reverse the order for right image */
+  flex-direction: row-reverse;
 }
 
 .card-image {
-  width: 30%; /* Set a fixed width for the image */
+  width: 30%;
   height: 100%;
-  border-radius: 8px 0 0 8px; /* Optional: round the left corners */
-  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 8px 0 0 8px;
+  object-fit: cover;
 }
 
 .text-content {
@@ -61,7 +61,13 @@
   font-size: 10px;
 }
 
-/* Media query for phones (screen width <= 768px) */
+.tools {
+  font-style: italic;
+  font-size: 0.8rem;
+  font-family: "Arial", sans-serif;
+  color: #aaa;
+}
+
 @media (max-width: 768px) {
   .card {
     max-width: 60vw;
@@ -73,11 +79,11 @@
   }
 
   .card-content {
-    flex-direction: column; /* Stack image on top of content */
+    flex-direction: column;
   }
 
   .card-content.reverse {
-    flex-direction: column; /* Stack image on top of content */
+    flex-direction: column;
   }
 
   .card-image {
@@ -91,18 +97,17 @@
   }
 }
 
-/* Media query for tablets (screen width <= 1024px) */
 @media (max-width: 1024px) {
   .card {
     width: 600px;
     min-height: auto;
-    flex-direction: column; /* Ensure card content stacks vertically */
+    flex-direction: column;
   }
 
   .card-image {
-    width: 100%; /* Full width for the image */
-    height: 250px; /* Set a fixed height for the image */
-    border-radius: 8px 8px 0 0; /* Round the top corners */
+    width: 100%;
+    height: 250px;
+    border-radius: 8px 8px 0 0;
   }
 
   .text-content {

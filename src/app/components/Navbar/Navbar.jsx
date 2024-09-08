@@ -29,7 +29,7 @@ function Navbar() {
       <nav className="nav-wrapper">
         <div className="nav-content">
           <button className="menu-btn" onClick={toggleMenu}>
-            &#9776; {/* This is a hamburger icon */}
+            &#9776;
           </button>
           <h1
             className="logo"
@@ -67,9 +67,9 @@ function Navbar() {
                 Projects
               </Link>
             </li>
-            <li>
+            {/* <li>
               <a className="menu-item">Contact Me</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

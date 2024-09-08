@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({ title, content, imageSrc, imageDirection }) => {
+const Card = ({ title, tools, content, imageSrc, imageDirection }) => {
   return (
     <div className="card">
       <div
@@ -13,6 +13,7 @@ const Card = ({ title, content, imageSrc, imageDirection }) => {
         <div className="text-content">
           <div className="text-title">
             <h3>{title}</h3>
+            <span className="tools"> | {tools} </span>
           </div>
           <div className="text-points">
             <ul>

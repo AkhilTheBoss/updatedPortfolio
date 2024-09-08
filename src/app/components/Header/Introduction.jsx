@@ -7,7 +7,8 @@ function Introduction() {
       <div className="introduction">
         <h2>Welcome to My Portfolio</h2>
         <div className="text">
-          Akhileshwar This Side! Here you can find my projects and skills.
+          Akhileshwar This Side! Here you can find my projects, experiences, and
+          skills.
         </div>
       </div>
       <div className="info">
