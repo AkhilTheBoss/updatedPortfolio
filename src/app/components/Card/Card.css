@@ -86,11 +86,11 @@
 
 @media (max-width: 768px) {
   .card {
-    max-width: 60vw;
+    max-width: 80vw;
     min-height: 40vh;
     flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: -5vh;
+    margin-right: -5vh; */
     margin: 0 auto;
   }
 
