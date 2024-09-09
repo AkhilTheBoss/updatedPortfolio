@@ -29,8 +29,13 @@ function Navbar() {
       <nav className="nav-wrapper">
         <div className="nav-content">
           <button className="menu-btn" onClick={toggleMenu}>
-            &#9776;
+            {isMenuOpen ? (
+              <span className="close-icon">✖</span> 
+            ) : (
+              <span className="hamburger-icon">&#9776;</span> 
+            )}
           </button>
+
           <h1
             className="logo"
             onClick={handleLogoClick}
