@@ -78,8 +78,8 @@
   padding: 0.5rem;
   border-radius: 5px;
   font-size: 0.9rem;
-  pointer-events: none; /* Prevent mouse events on the tooltip */
-  z-index: 100; /* Make sure it appears above other elements */
+  pointer-events: none;
+  z-index: 100;
   transition: opacity 0.3s ease;
 }
 
@@ -90,12 +90,17 @@
 }
 
 @media (max-width: 769px) {
+  .close-icon {
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+  }
   .menu-btn {
-    display: block; /* Show the hamburger button */
-    margin-left: auto; /* Push the button to the right */
+    display: block;
+    margin-left: auto;
   }
   .nav-content {
-    flex-direction: row-reverse; /* Reverse the order to put menu on the right */
+    flex-direction: row-reverse;
   }
   .nav-content ul {
     display: none;
@@ -103,13 +108,13 @@
     background: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 100%;
-    right: 0; /* Align the dropdown to the right */
+    right: 0; 
     width: 100%;
     padding: 1rem;
     z-index: 29;
   }
   .nav-content ul.menu-open {
-    display: flex; 
+    display: flex;
   }
   .nav-content li {
     margin: 1rem 0;
