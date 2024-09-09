@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Card from "../Card/Card";
-import "./Body.css"; // Ensure to import the CSS file
+import "./Body.css"; 
 
 function Body() {
   useEffect(() => {
@@ -10,17 +10,17 @@ function Body() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("in-view");
-            entry.target.classList.remove("out-of-view"); // Ensure card is visible
+            entry.target.classList.remove("out-of-view");
           } else if (
             entry.boundingClientRect.y < 0 ||
             entry.boundingClientRect.y > window.innerHeight / 2
           ) {
             entry.target.classList.add("out-of-view");
-            entry.target.classList.remove("in-view"); // Ensure card is not visible
+            entry.target.classList.remove("in-view"); 
           }
         });
       },
-      { threshold: [0.5] } // Trigger at 50% visibility
+      { threshold: [0.5] } 
     );
 
     const cards = document.querySelectorAll(".card");

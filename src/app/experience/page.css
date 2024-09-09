@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: black; /* Background color of the body */
-  color: #fff; /* Text color for general page content */
-  font-family: "Poppins", sans-serif; /* Set default font family */
+  background-color: black;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 .experience-wrapper {
@@ -37,26 +37,30 @@ body {
   background-color: rgba(55, 52, 52);
   padding: 20px;
   margin: 10px 0;
-  width: 600px; /* Default width for larger screens */
+  width: 600px;
   border-radius: 8px;
-  display: flex; /* Enable flexbox layout */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  align-items: center;
   cursor: pointer;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+.box1:hover {
+  background-color: rgba(120, 120, 120, 0.9);
+}
+
 .box-image {
-  width: 50px; /* Set a width for the image */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 25px; /* Increased space between the image and the content */
+  width: 50px;
+  height: auto;
+  margin-right: 25px;
 }
 
 .box1 .content {
-  text-align: left; /* Align text to the left */
-  flex-grow: 1; /* Allow content to grow and fill the available space */
-  font-family: "Poppins", sans-serif; /* Ensure text uses Poppins font */
+  text-align: left;
+  flex-grow: 1;
+  font-family: "Poppins", sans-serif;
 }
 
 .box1.in-view {
@@ -69,23 +73,20 @@ body {
   transform: translateY(0);
 }
 
-/* Media queries for responsive design */
 @media (max-width: 1024px) {
-  /* Styles for tablet view (screen width <= 1024px) */
   .box1 {
-    width: 400px; /* Reduce width for tablet view */
-    padding: 15px; /* Adjust padding for tablet view */
+    width: 400px;
+    padding: 15px;
   }
 }
 
 @media (max-width: 768px) {
-  /* Styles for mobile view (screen width <= 768px) */
   .box1 {
-    width: 300px; /* Further reduce width for mobile view */
-    padding: 10px; /* Adjust padding for mobile view */
+    width: 300px;
+    padding: 10px;
   }
 
   .box-image {
-    width: 40px; /* Reduce image size for mobile */
+    width: 40px;
   }
 }

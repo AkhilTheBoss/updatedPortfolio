@@ -1,5 +1,5 @@
 import React from "react";
-import "./Introduction.css"; // Create a CSS file for styling
+import "./Introduction.css";
 
 function Introduction() {
   return (
