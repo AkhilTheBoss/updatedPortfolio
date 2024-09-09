@@ -7,8 +7,8 @@ import "./page.css";
 export default function Home() {
   return (
     <>
+      <Navbar />
       <div className="Home-wrapper">
-        <Navbar />
         <Header />
         {/* <CircularImages /> */}
         {/* <div className="header">
