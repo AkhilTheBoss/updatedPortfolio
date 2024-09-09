@@ -62,7 +62,6 @@
   align-items: flex-start;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .boxes-wrapper {
     justify-content: space-around;

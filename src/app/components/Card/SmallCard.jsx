@@ -1,4 +1,3 @@
-// SmallCard.jsx
 import React from "react";
 import "./SmallCard.css";
 

@@ -7,20 +7,17 @@
   margin-bottom: 10px;
 }
 
-/* Add media queries for responsive design */
 @media (max-width: 1024px) {
-  /* Styles for tablet view (screen width <= 1024px) */
   .typing-container {
-    justify-content: flex-start; /* Keep the typing effect aligned to the left */
-    text-align: left; /* Align text to the left */
+    justify-content: flex-start; 
+    text-align: left; 
   }
 }
 
 @media (max-width: 768px) {
-  /* Styles for mobile view (screen width <= 768px) */
   .typing-container {
-    justify-content: flex-start; /* Keep the typing effect aligned to the left */
-    text-align: left; /* Align text to the left */
+    justify-content: flex-start; 
+    text-align: left; 
   }
 }
 

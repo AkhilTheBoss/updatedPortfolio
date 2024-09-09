@@ -14,6 +14,10 @@
   cursor: pointer;
 }
 
+.card:hover {
+  background-color: rgba(120, 120, 120, 0.9);
+}
+
 .card.in-view {
   opacity: 1;
   transform: translateY(0);

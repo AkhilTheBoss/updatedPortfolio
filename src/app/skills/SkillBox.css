@@ -18,10 +18,10 @@
   margin: 0 auto;
   position: relative;
   cursor: pointer;
-  line-height: 1.2; /* Ensures lines are close enough for underlining */
+  line-height: 1.2;
   text-align: center;
-  padding-bottom: 0.6rem; /* Adds space for the underline */
-  display: inline; /* Display as inline to allow text wrapping */
+  padding-bottom: 0.6rem;
+  display: inline;
 }
 
 .skill-title::after {
@@ -39,7 +39,7 @@
 }
 
 .skill-title:first-line {
-  background-image: none; /* Remove the underline for the first line */
+  background-image: none;
 }
 
 .skill-title:hover::after {

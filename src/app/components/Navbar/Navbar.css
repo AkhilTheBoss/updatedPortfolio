@@ -109,7 +109,7 @@
     z-index: 29;
   }
   .nav-content ul.menu-open {
-    display: flex; /* Show the menu items when open */
+    display: flex; 
   }
   .nav-content li {
     margin: 1rem 0;

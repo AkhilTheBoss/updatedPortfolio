@@ -11,17 +11,14 @@ body {
   background-color: black;
 }
 
-/* Add media queries for responsive design */
 @media (max-width: 768px) {
-  /* Styles for mobile view (screen width <= 768px) */
   .Home-wrapper {
-    padding: 10px; /* Reduce padding for mobile view */
+    padding: 10px;
   }
 }
 
 @media (max-width: 1024px) {
-  /* Styles for tab view (screen width <= 1024px) */
   .Home-wrapper {
-    padding: 20px; /* Reduce padding for tab view */
+    padding: 20px;
   }
 }
